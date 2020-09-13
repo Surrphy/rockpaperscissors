@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,16 +13,21 @@
     <!--Scoreboard with badges, and scores for user and computer-->
     <div class="score-board">
         <div class="badge" id="user-label">user</div>
-        <div class="badge" id="comp-label">comp</div>
         <span class="score" id="user-score">0</span>:<span class="score" id="comp-score">0</span>
+        <div class="badge" id="comp-label">comp</div>
     </div>
 
     <!--Results text-->
-    <div class="results">You won</div>
+    <div class="results">
+        <p>You Won</p>
+    </div>
 
     <!--choose rock paper or scissors-->
-    <div class="make-move"><img src="./Images/icons8-clenched-fist-48.png" alt="Image not found"><img src="./Images/icons8-hand-48.png" alt="Image not found"><img src="./Images/icons8-hand-scissors-48.png" alt="Image not found">
-    Make your move
+    <div class="make-move">
+        <div class="choice" id="rock"><img src="./Images/icons8-clenched-fist-48.png" alt="Image not found"></div>
+        <div class="choice" id="paper"><img src="./Images/icons8-hand-48.png" alt="Image not found"></div>
+        <div class="choice" id="scissors"><img src="./Images/icons8-hand-scissors-48.png" alt="Image not found"></div>
+        <p>Make your move</p>
     </div>
 
 </body>
