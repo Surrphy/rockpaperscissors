@@ -47,7 +47,7 @@ function resultsCalc(p1Pick, p2Pick) {
     return results;
 }
 
-function resultsText (results) {
+function resultsText(results) {
     let text = null;
 
     switch (results) {

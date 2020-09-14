@@ -17,19 +17,46 @@ rock_div.addEventListener('click', () => {
     console.log('Rock');
     userPick = 0;
     compPick = Math.floor(Math.random()*3);
-    results_div.innerHTML = `<p>${resultsText(resultsCalc(userPick, compPick))}</p>`;
+    results = resultsCalc(userPick, compPick);
+    results_div.innerHTML = `<p>${resultsText(results)}</p>`;
+    if (results == 1) {
+        userScore++;
+        userScore_span.innerHTML = `${userScore}`;
+    }
+    else if (results == 2) {
+        compScore++;
+        compScore_span.innerHTML = `${compScore}`;
+    }
 });
 
 paper_div.addEventListener('click', () => {
     console.log('Paper');
     userPick = 1;
     compPick = Math.floor(Math.random()*3);
-    results_div.innerHTML = `<p>${resultsText(resultsCalc(userPick, compPick))}</p>`;
+    results = resultsCalc(userPick, compPick);
+    results_div.innerHTML = `<p>${resultsText(results)}</p>`;
+    if (results == 1) {
+        userScore++;
+        userScore_span.innerHTML = `${userScore}`;
+    }
+    else if (results == 2) {
+        compScore++;
+        compScore_span.innerHTML = `${compScore}`;
+    }
 });
 
 scissors_div.addEventListener('click', () => {
     console.log('Scissors');
     userPick = 2;
     compPick = Math.floor(Math.random()*3);
-    results_div.innerHTML = `<p>${resultsText(resultsCalc(userPick, compPick))}</p>`;
+    results = resultsCalc(userPick, compPick);
+    results_div.innerHTML = `<p>${resultsText(results)}</p>`;
+    if (results == 1) {
+        userScore++;
+        userScore_span.innerHTML = `${userScore}`;
+    }
+    else if (results == 2) {
+        compScore++;
+        compScore_span.innerHTML = `${compScore}`;
+    }
 });
