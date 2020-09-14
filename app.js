@@ -17,19 +17,19 @@ rock_div.addEventListener('click', () => {
     console.log('Rock');
     userPick = 0;
     compPick = Math.floor(Math.random()*3);
-    console.log(resultsText(resultsCalc(userPick, compPick)))
+    results_div.innerHTML = `<p>${resultsText(resultsCalc(userPick, compPick))}</p>`;
 });
 
 paper_div.addEventListener('click', () => {
     console.log('Paper');
     userPick = 1;
     compPick = Math.floor(Math.random()*3);
-    console.log(resultsText(resultsCalc(userPick, compPick)))
+    results_div.innerHTML = `<p>${resultsText(resultsCalc(userPick, compPick))}</p>`;
 });
 
 scissors_div.addEventListener('click', () => {
     console.log('Scissors');
     userPick = 2;
     compPick = Math.floor(Math.random()*3);
-    console.log(resultsText(resultsCalc(userPick, compPick)))
+    results_div.innerHTML = `<p>${resultsText(resultsCalc(userPick, compPick))}</p>`;
 });

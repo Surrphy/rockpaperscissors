@@ -1,6 +1,8 @@
 function resultsCalc(p1Pick, p2Pick) {
     let results = null;
     
+    // p*Pick ---> 0 -> Rock | 1 -> Paper | 2 -> Scissors
+    // results --> 0 -> Draw | 1 -> p1 Wins | 2 -> p2 Wins
     switch (p1Pick) {
         case 0:
             switch (p2Pick) {
